@@ -6,7 +6,7 @@ TESTS = list_int_tests list_float_tests list_double_tests list_char_tests list_v
 all: $(TESTS)
 
 %_tests: %_tests.c ../../src/list/list.c
-    $(CC) $(CFLAGS) -o $@ $^ $(LDFLAGS)
+	$(CC) $(CFLAGS) -o $@ $^ $(LDFLAGS)
 
 clean:
-    rm -f $(TESTS)
+	rm -f $(TESTS)

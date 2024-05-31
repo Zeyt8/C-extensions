@@ -14,14 +14,14 @@ jobs:
     - name: Install dependencies
       run: sudo apt-get install -y libcunit1 libcunit1-dev
     - name: Build string tests
-      run: ./run_tests.sh string build
+      run: ./test/run_tests.sh string build
     - name: Run string tests
-      run: ./run_tests.sh string run
+      run: ./test/run_tests.sh string run
     - name: Clean string tests
-      run: ./run_tests.sh string clean
+      run: ./test/run_tests.sh string clean
     - name: Build list tests
-      run: ./run_tests.sh list build
+      run: ./test/run_tests.sh list build
     - name: Run list tests
-      run: ./run_tests.sh list run
+      run: ./test/run_tests.sh list run
     - name: Clean list tests
-      run: ./run_tests.sh list clean
+      run: ./test/run_tests.sh list clean

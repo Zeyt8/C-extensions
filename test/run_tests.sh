@@ -22,7 +22,7 @@ if [ "$1" != "string" ] && [ "$1" != "list" ]; then
     exit 1
 fi
 
-cd "$1"
+cd "test/$1"
 
 case $2 in
     build)

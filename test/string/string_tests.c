@@ -91,19 +91,19 @@ void test_string_remove(void) {
 
 int main() {
     CU_initialize_registry();
-    CU_pSuite suite = CU_add_suite("string_test", 0, 0);
+    CU_pSuite suite = CU_add_suite("string", 0, 0);
 
-    CU_add_test(suite, "test_string_new_empty", test_string_new_empty);
-    CU_add_test(suite, "test_string_new_char", test_string_new_char);
-    CU_add_test(suite, "test_string_free", test_string_free);
-    CU_add_test(suite, "test_string_concat_string", test_string_concat_string);
-    CU_add_test(suite, "test_string_concat_char", test_string_concat_char);
-    CU_add_test(suite, "test_string_find_string", test_string_find_string);
-    CU_add_test(suite, "test_string_find_char", test_string_find_char);
-    CU_add_test(suite, "test_string_substring", test_string_substring);
-    CU_add_test(suite, "test_string_compare_string", test_string_compare_string);
-    CU_add_test(suite, "test_string_compare_char", test_string_compare_char);
-    CU_add_test(suite, "test_string_remove", test_string_remove);
+    CU_add_test(suite, "new_empty", test_string_new_empty);
+    CU_add_test(suite, "new_char", test_string_new_char);
+    CU_add_test(suite, "free", test_string_free);
+    CU_add_test(suite, "concat_string", test_string_concat_string);
+    CU_add_test(suite, "concat_char", test_string_concat_char);
+    CU_add_test(suite, "find_string", test_string_find_string);
+    CU_add_test(suite, "find_char", test_string_find_char);
+    CU_add_test(suite, "substring", test_string_substring);
+    CU_add_test(suite, "compare_string", test_string_compare_string);
+    CU_add_test(suite, "compare_char", test_string_compare_char);
+    CU_add_test(suite, "remove", test_string_remove);
 
     CU_basic_set_mode(CU_BRM_VERBOSE);
     CU_basic_run_tests();
